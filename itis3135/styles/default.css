@@ -1,0 +1,27 @@
+body{
+    background-color:salmon;
+    text-align: center;
+    color: white;
+    font-family:cursive;
+}
+a{
+    color: blueviolet;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: line;
+    color:blue;
+}
+main{
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+h2{
+    text-align: center;
+}
+img{
+    width: 350px;
+    height:fit-content;
+    text-align: auto;
+}
