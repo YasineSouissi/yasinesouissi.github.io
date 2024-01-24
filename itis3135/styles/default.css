@@ -2,14 +2,14 @@ body{
     background-color:salmon;
     text-align: center;
     color: white;
-    font-family:cursive;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 a{
     color: blueviolet;
     text-decoration: none;
 }
 a:hover{
-    text-decoration: line;
+    
     color:blue;
 }
 main{
@@ -23,5 +23,5 @@ h2{
 img{
     width: 350px;
     height:fit-content;
-    text-align: auto;
+    align-content: center;
 }
