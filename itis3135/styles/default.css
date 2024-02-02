@@ -25,3 +25,22 @@ img{
     height:fit-content;
     align-content: center;
 }
+.info{
+    background-color: black;
+    color:wheat;
+}
+.even{
+    background-color: gray;
+    color:black;
+}
+.even{
+    background-color:darkgrey;
+    color:black;
+}
+.clientinfo{
+    background-color:teal;
+    color:whitesmoke;
+}
+#fullname, #telephone, #email{
+    display:block;
+}
