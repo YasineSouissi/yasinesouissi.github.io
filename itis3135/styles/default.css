@@ -10,7 +10,7 @@ a{
 }
 a:hover{
     
-    color:blue;
+    color:darkblue;
 }
 main{
     text-align: left;
@@ -43,4 +43,7 @@ img{
 }
 #fullname, #telephone, #email{
     display:block;
+}
+li{
+    text-align: left;
 }
