@@ -8,28 +8,15 @@
     <link rel="stylesheet" href="styles/default.css">
 </head>
 <body>
-    <header>
-        <h1>Website Evaluations</h1>
-        <nav>
-        <a href="./">Home</a>
-        𓆝
-        <a href="introduction.html">Introduction</a>
-        𓆝
-        <a href="contract.html">Contract</a>
-        𓆝
-        <a href="tables.html">Tables</a>
-        𓆝
-        <a href="forms.html">Forms</a>
-        𓆝
-        <a href="stuff\CRA~PY+WEB.html">CRAPPY WEBPAGE</a>
-        𓆝
-        <a href="website_evaluations.html">Website Evaluations</a>
-        </nav>
+    <header>   
+        <div data-include="components/header.html"></div>
     </header>
     <main>
+        <h2>Website Evaluations</h2>
         <section>
-            <h2>The Good Website, Amazon</h2>
-            <a href="https://www.amazon.com"><h3>Amazon</h3></a>
+           
+            <h3>The Good Website, Amazon</h3>
+            <a href="https://www.amazon.com"><h4>Amazon</h4></a>
             <p>This website is very direct with what it offers, on the nav bar we see a bunch of categorys. Right above that we have the important information about our account like language delivery options and orders. Below there are some advertisements that are put on a gradient and overlapped with products that might intrest us. Largely the items are displayed in white boxes likely to allow it to blend into the transparent background of most prouct photos allowing in to pop.  </p>
             <ul>
                 <li><strong>C</strong>ontrast: Here the contrast is largely saved for the top of the page with the stark dark blue contrasting the off white of the page storing all of the information.</li>
@@ -39,8 +26,8 @@
             </ul>
         </section>
         <section>
-            <h2>The Bad Website, Seychelles Government Page</h2>
-            <a href="https://www.egov.sc/"><h3>Seychelles Government Site</h3></a>
+            <h3>The Bad Website, Seychelles Government Page</h3>
+            <a href="https://www.egov.sc/"><h4>Seychelles Government Site</h4></a>
             <p>This website is OLD to say the least. It definetly feels like it was made in the early days of the internet but it wasnt, the last time this site was updated was in 2015 so nearly a decade at this point. Granted this website does have everything you would need if your going on the website in the first place. It has a bunch of boxes that would answer any FAQ's and images embeded with links to their phone or ways to download forms. </p>
             <ul>
                 <li><strong>C</strong>ontrast: Theres very little here, the website is largely shades of white and blue and gray and despite this being sort of boring a lot of the times the gray is used against the white it becomes hard to read.</li>
@@ -51,28 +38,9 @@
         </section>
     </main>
     <footer>
-        <nav>
-            <a href="https://webpages.charlotte.edu/ysouiss1/">Charlotte.edu</a>
-            𓆝
-            <a href="https://github.com/YasineSouissi/YasineSouissi.github.io">Github</a>
-            𓆝
-            <a href="https://yasinesouissi.github.io/itis3135">Github.io</a>
-            𓆝
-            <a href="https://www.freecodecamp.org/YasineSouissi">FreeCodeCamp</a>
-            𓆝
-            <a href="https://www.codecademy.com/profiles/YasineSouissi/">Codecademy</a>
-            𓆝
-            <a href="http://www.linkedin.com/in/yasine-souissi">LinkedIn</a>
-        </nav>
-        <p>Page designed by<a href="yummysalmon.html"> Cool Salmon Associates</a> &copy;2024</p>
-        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
-            <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
-           </a>
-           <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
-            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-             </a>       
+        <div data-include="components/footer.html"></div> 
     </footer>
-
+    <script src="scripts/HTMLInclude.js"></script>
     <script>
     document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
          document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
