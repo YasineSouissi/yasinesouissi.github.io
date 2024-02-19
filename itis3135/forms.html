@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasine Souissi's Yummy Salmon || ITIS3135 Forms</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Client Information Form</h2>
+        <form class="clientinfo" action="#">
+            <fieldset>
+                <label for="fullname">Full Name:</label><input required placeholder="Ex: John Smith" type="text" name="fullname" id="fullname">
+                <label for="telephone">Phone Number:</label><input required type="tel" name="telephone" id="telephone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                <label for="email">Email:</label><input required type="email" name="email" id="email">
+            </fieldset>
+            <fieldset>
+                <p>How are you feeling really?</p>
+                <label for="happy" >Happy:<input type="checkbox" id="happy" name="feels"></label>
+                <label for="sad" >Sad:<input type="checkbox" id="sad" name="feels"></label>
+                <label for="excite" >Excited:<input type="checkbox" id="excite" name="feels"></label>
+                <label for="mad" >Mad:<input type="checkbox" id="mad" name="feels"></label>
+                <p>How do you feel about rubber chickens?</p>
+                <label for="positive">I love them!!</label><input required type="radio" name="box" id="positive"><label for="negative">I hate them!!</label><input type="radio" name="box" id="negative">
+                <p>What makes you laugh?</p>
+                <label for="referrer">
+                    <select id="referrer" name="referrer">
+                      <option value="">(select one)</option>
+                      <option value="1">people getting hurt</option>
+                      <option value="2">cats and dogs</option>
+                      <option value="3">comedians</option>
+                      <option value="4">Other</option>
+                    </select>
+                  </label>
+                  <p>Clear Form?</p>
+                  <label for="thingy"><input type="reset" id="thingy"></label>
+                  <label for="sub"><input type="Submit" id="sub"></label>
+            </fieldset>
+        </form>
+        
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>       
+    </footer>
+    <script src="scripts/HTMLInclude.js"></script>
+    <script>
+    document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+         document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+</body>
+</html>
