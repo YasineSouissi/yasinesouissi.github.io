@@ -38,6 +38,12 @@ body{
     margin:10%;
     
 }
+main form input{
+    display:block;
+}
+figcaption{
+    text-align: center;
+}
 body header{
     text-align: center;
 }

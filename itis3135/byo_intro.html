@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasine Souissi's Yummy Salmon || ITIS3135 BYO Intro</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>ITIS 3135 BYO Introduction</h2>
+        <h3>Time to Build Your Own Intro page, please fill out the form below so we can create your own page:</h3>
+        <form id="form">
+            <section id="introduction">
+                <label for="username" >Name:</label>
+                <input type="text" id="username" placeholder="Ex: Yasine Souissi" required>
+                <label for="mascot" >Mascot:</label>
+                <input type="text" id="mascot" placeholder="Ex: Yummy Salmon" required>
+                <label for="intro-img" >Image:</label>
+                <input type="file" id="intro-img"  accept="image/png, image/jpeg" required>
+                <label for="img-cap" >Image Caption:</label>
+                <input type="text" id="img-cap" placeholder="Ex: A shark breaching" required>
+                <label for="personal" >Personal Background:</label>
+                <input type="text" id="personal" placeholder="Ex: I was born..." required>
+                <label for="professional" >Professional Background:</label>
+                <input type="text" id="professional" placeholder="Ex: I work at..." required>
+                <label for="academic" >Academic Background:</label>
+                <input type="text" id="academic" placeholder="Ex: I studied at..." required>
+                <label for="background" >Background in Web Development:</label>
+                <input type="text" id="background" placeholder="Ex: Worked with HTML" required>
+                <label for="platform" >Primary Computer Platform:</label>
+                <input type="text" id="platform" placeholder="Ex: Linux" required>
+                <label for="coursesTaking">Courses being taken:</label>
+                <div id="coursesInput"></div>
+                <div id="coursesButtons">
+                    <input type="button" id="coursesTaking" value="Insert Course" required>
+                </div>
+                <label for="funny" >Funny Statement:</label>
+                <input type="text" id="funny" placeholder="Ex: I'm a juggler" >
+                <label for="else" >Anything else:</label>
+                <input type="text" id="else" placeholder="Ex: I'm excited start...">
+                <label for="check"> 
+                    "I understand that what is on this page is not password protected and I will not put anything here that I don't want publicly available."
+                    <input type="checkbox"  required>
+                </label>
+                <input type="reset" id="reset" value="Reset">         
+                <input type="submit" id="submit" value="Submit">
+            </section>
+        </form>
+        
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>     
+    </footer>
+    <script src="scripts/HTMLInclude.js"></script>
+    <script src="scripts/survey.js"></script>
+<script>
+    document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+         document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+ </script>
+</body>
+</html>
