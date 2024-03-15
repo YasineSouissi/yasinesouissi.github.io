@@ -88,6 +88,10 @@ main img{
     background-color:teal;
     color:whitesmoke;
 }
+.calculator_keys { 
+    display: grid; 
+    /* other necessary CSS */ 
+  }
 #fullname, #telephone, #email{
     display:block;
 }
@@ -96,7 +100,7 @@ li{
 }
 main div{
     background: teal;
-   text-align: center;
+    display:inline-flexbox;
 }
 main div button{
     text-align: left;
@@ -104,4 +108,8 @@ main div button{
 main div p{
     background-color: whitesmoke;
     color: black;
+}
+footer button{
+    background: teal;
+    text-align: center;
 }
