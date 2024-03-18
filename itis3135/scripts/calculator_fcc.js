@@ -1,3 +1,4 @@
+window.onload= ()=>{
 const display = document.querySelector(".display");
 
 const buttons = document.querySelectorAll("button");
@@ -30,7 +31,7 @@ const calculate = (btnValue) => {
 buttons.forEach((button) => {
     button.addEventListener("click", (e) => calculate(e.target.dataset.value));
 });
-
+}
 // const calculator = document.querySelector('.calculator');
 // const keys = calculator.querySelector('.calculator_keys');
 // const display = document.querySelector('.calculator_display');
