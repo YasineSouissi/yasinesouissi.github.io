@@ -28,7 +28,9 @@
         font-size: 60%;
         } 
 }
-
+main input,label{
+    display:block;
+}
 body{
     background-color:salmon;
     color: white;
