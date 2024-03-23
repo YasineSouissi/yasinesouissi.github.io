@@ -13,12 +13,16 @@
     color: #333;
     margin: 0;
     padding: 0;
+    
   }
   header {
     background-color: #4CAF50;
     color: white;
     text-align: center;
     padding: 20px;
+  }
+  body section p{
+    margin-right: 30%;
   }
   nav {
     overflow: hidden;
@@ -40,7 +44,6 @@
   nav p{
     display: inline;
     color:#333;
-
   }
   .section {
     display: none;
@@ -51,7 +54,7 @@
     color: white;
     text-align: center;
     padding: 20px;
-    position: fixed;
+    position:relative;
     bottom: 0;
     width: 100%;
   }
@@ -65,6 +68,33 @@
   .validation-button {
     margin: 0 10px;
   }
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    margin: auto;
+    overflow: hidden; /* Ensure images don't overflow */
+  }
+  .carousel-slide {
+    display: none;
+    width: 100%; 
+  }
+  .prev, .next {
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  .prev {
+    left: 0;
+  }
+  .next {
+    right: 70%;
+  }
 </style>
 </head>
 <body>
@@ -72,7 +102,7 @@
 <header>
   <h1>Yasine's Visual Arts Page</h1>
   <nav>
-    <button type="button" onclick="showSection('what')">What</button>
+    <button type="button" onclick="showSection('what')">Home</button>
     <p>☠</p>
     <button type="button" onclick="showSection('who')">Who</button>
     <p>☠</p>
@@ -83,20 +113,50 @@
     <button onclick="showSection('how')">How</button>
     <p>☠</p>
     <button onclick="showSection('why')">Why</button>
+    <p>☠</p>
+    <button onclick="showSection('aiprompt')">AI Prompts</button>
   </nav>
 </header>
 
 
 
 <section id="what" class="section" style="display: block;">
-  <h2>What</h2>
-  <h3>About the Hobby</h3>
-  <p>Description of the hobby goes here.</p>
+  <h2>Home</h2>
+  <h3>Visual Arts</h3>
+  <p>To me, Visual Arts is any kind of physical art thats made to be displayed.
+     I have to believe this because the variety of art I create is so vastly different which you'll see as you explore my page!
+      below will be just a taste of what I'm capable of, just some practices I did that I'm particularly proud of for one reason or another.
+  </p>
   <figure>
-    <!--<img src="image-url" alt="AI Generated Image">-->
-    <figcaption>AI Generated Image</figcaption>
+    <img src="images/misc4.jpeg" alt="monkey" height="40%" width="40%">
+    <figcaption>This was a cat from spiderman across the spiderverse that I drew.</figcaption>
   </figure>
-  <p><em>Prompt used for image generation: [prompt here]</em></p>
+  <div class="carousel-container">
+    <!--slides-->
+    <div class="carousel-slide fade">
+      <img src="images/misc1.jpeg" alt="Slide 1" height="30%" width="30%">
+    </div>
+    <div class="carousel-slide fade">
+      <img src="images/misc2.jpeg" alt="Slide 2" height="30%" width="30%">
+    </div>
+    <div class="carousel-slide fade">
+        <img src="images/misc3.jpeg" alt="Slide 3" height="30%" width="30%">
+    </div>
+    <div class="carousel-slide fade">
+        <img src="images/misc5.jpeg" alt="Slide 4" height="30%" width="30%">
+    </div>
+    <div class="carousel-slide fade">
+        <img src="images/misc7.jpeg" alt="Slide 5" height="30%" width="30%">
+    </div>
+    <div class="carousel-slide fade">
+        <img src="images/misc8.jpeg" alt="Slide 6" height="30%" width="30%">
+    </div>
+    
+    <!-- Navigation buttons -->
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+  </div>
+  <p><em>Since I made all this art myself basically all of this was used in order to improve my skill. There is a drawing of the statue of david by michealangelo, I did not put a leaf.</em></p>
 </section>
 
 <section id="who" class="section">
@@ -104,8 +164,8 @@
   <h3>About the Hobbyists</h3>
   <p>Information about hobbyists involved.</p>
   <figure>
-    <!--<img src="image-url" alt="AI Generated Image">-->
-    <figcaption>AI Generated Image</figcaption>
+    
+    <figcaption></figcaption>
   </figure>
   <p><em>Prompt used for image generation: [prompt here]</em></p>
 </section>
@@ -154,6 +214,17 @@
   <p><em>Prompt used for image generation: [prompt here]</em></p>
 </section>
 
+<section id="aiprompt" class="section">
+    <h2>AI Prompts</h2>
+    <h3>Reasons to Pursue the Hobby</h3>
+    <p>Benefits and reasons for pursuing the hobby.</p>
+    <figure>
+      
+      <figcaption>AI Generated Image</figcaption>
+    </figure>
+    <p><em>Prompt used for image generation: [prompt here]</em></p>
+  </section>
+
 <footer>
     <p>Page designed by <a href="../souissidevelopement.com/" target="_blank">Souissi Developement</a> &copy;2024, </p>
 
@@ -180,6 +251,42 @@
     }
     document.getElementById(sectionId).style.display = 'block';
   }
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("carousel-slide");
+
+  // Increment slide index and reset if necessary
+
+  // Hide all slides
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  
+
+  // Display the current slide
+  slides[slideIndex].style.display = "block";
+  //setTimeout(showSlides, 10000);
+  
+}
+
+// Function to change slides manually
+function changeSlide(n) {
+    var slides = document.getElementsByClassName("carousel-slide");
+    if(slideIndex===0&&n===-1){
+        slideIndex=slides.length-1;
+    }
+    else if(slideIndex===slides.length-1&&n===1){
+        slideIndex=0;
+    }
+    else{
+        slideIndex += n;
+    }
+    showSlides();
+}
 </script>
 
 </body>
