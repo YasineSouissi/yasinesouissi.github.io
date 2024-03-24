@@ -71,6 +71,13 @@
   footer a:hover{
     color: #ffffff;;
   }
+  section a{
+    color:#4CAF50;
+    text-decoration: none;
+  }
+  section a:hover{
+    color:#333;
+  }
   .validation-button {
     margin: 0 10px;
   }
@@ -119,13 +126,13 @@
     <p>☠</p>
     <button type="button" onclick="showSection('when')">When</button>
     <p>☠</p>
-    <button onclick="showSection('where')">Where</button>
+    <button type="button" onclick="showSection('where')">Where</button>
     <p>☠</p>
-    <button onclick="showSection('how')">How</button>
+    <button type="button" onclick="showSection('how')">How</button>
     <p>☠</p>
-    <button onclick="showSection('why')">Why</button>
+    <button type="button" onclick="showSection('why')">Why</button>
     <p>☠</p>
-    <button onclick="showSection('aiprompt')">AI Prompts</button>
+    <button type="button" onclick="showSection('aiprompt')">AI Prompts</button>
   </nav>
 </header>
 
@@ -177,11 +184,15 @@
 <section id="who" class="section">
   <h2>Who</h2>
   <h3>Who is the subject of my art?</h3>
-  <p>Usually I choose characters from live action and animated media to recreate in my art as it serves as quick inspiration, as well as a jumping off point.</p>
+  <p>Usually I choose characters from live action and animated media to recreate in my art as it serves as quick inspiration, as well as a jumping off point.
+    The series that has served as a major inspiration recently has been one piece, a series that was brought to us by the talented Echiro Oda.
+    I also like this <a href="https://film-grab.com/" target="_blank">website</a> that has a ton of film grabs that I can use to study how the face and body move, as weell as appreciate some interesting cinematogrophy.
+  </p>
   <figure>
     <img src="images/sow5.jpeg" alt="buggy from one piece">
     <figcaption>Buggy D. Clown from one piece, the carrier of zebeks will and the strongest character in his respective universe</figcaption>
   </figure>
+
   <p><em>Prompt used for image generation: [prompt here]</em></p>
 </section>
 
