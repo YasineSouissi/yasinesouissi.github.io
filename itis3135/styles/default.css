@@ -101,7 +101,6 @@ li{
     text-align: left;
 }
 main div{
-    background: teal;
     display:inline-flexbox;
 }
 main div button{

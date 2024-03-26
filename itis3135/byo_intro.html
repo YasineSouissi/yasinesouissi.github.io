@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yasine Souissi's Yummy Salmon || ITIS3135 BYO Intro</title>
     <link rel="stylesheet" href="styles/default.css">
+    <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
 </head>
 <body>
     <header>
@@ -13,9 +14,10 @@
     </header>
     <main>
         <h2>ITIS 3135 BYO Introduction</h2>
-        <h3>Time to Build Your Own Intro page, please fill out the form below so we can create your own page:</h3>
+        
         <form id="form">
             <section id="introduction">
+                <h3>Time to Build Your Own Intro page, please fill out the form below so we can create your own page:</h3>
                 <label for="username" >Name:</label>
                 <input type="text" id="username" placeholder="Ex: Yasine Souissi" required>
                 <label for="mascot" >Mascot:</label>
@@ -37,7 +39,7 @@
                 <label for="coursesTaking">Courses being taken:</label>
                 <div id="coursesInput"></div>
                 <div id="coursesButtons">
-                    <input type="button" id="coursesTaking" value="Insert Course" required>
+                    <input type="button" id="coursesTaking" value="Insert Course" >
                 </div>
                 <label for="funny" >Funny Statement:</label>
                 <input type="text" id="funny" placeholder="Ex: I'm a juggler" >
@@ -45,7 +47,7 @@
                 <input type="text" id="else" placeholder="Ex: I'm excited start...">
                 <label for="check"> 
                     "I understand that what is on this page is not password protected and I will not put anything here that I don't want publicly available."
-                    <input type="checkbox"  required>
+                    <input type="checkbox" id="check"  required>
                 </label>
                 <input type="reset" id="reset" value="Reset">         
                 <input type="submit" id="submit" value="Submit">
