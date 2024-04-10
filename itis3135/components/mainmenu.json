@@ -12,5 +12,6 @@
     {"name": "Calculator fCC", "url": "calculator_fcc.html"},
     {"name": "Arrays", "url": "arrays.html"},
     {"name": "Client Project Part 1", "url": "clientprojpone.html"},
-    {"name": "Interactive Drawing", "url": "interactiveDrawing.html"}
+    {"name": "Interactive Drawing", "url": "interactiveDrawing.html"},
+    {"name":"Eclipse","url":"eclipse.html"}
 ]
