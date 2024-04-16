@@ -55,8 +55,9 @@ main h2 {
     font-size: 2em;
     margin-bottom: 20px;
     text-align: center;
+    
 }
-main section{
+main div{
     display:flex;
 }
 
