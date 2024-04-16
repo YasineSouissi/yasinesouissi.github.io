@@ -1,4 +1,5 @@
 [
     {"name": "CRAPPY WEBPAGE", "url": "stuff/CRA~PY+WEB.html"},
-    {"name": "Hobby Site", "url": "hobby/"}
+    {"name": "Hobby Site", "url": "hobby/"},
+    {"name": "Client Site", "url": "projects/"}
 ]

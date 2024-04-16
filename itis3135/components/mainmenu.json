@@ -13,5 +13,6 @@
     {"name": "Arrays", "url": "arrays.html"},
     {"name": "Client Project Part 1", "url": "clientprojpone.html"},
     {"name": "Interactive Drawing", "url": "interactiveDrawing.html"},
-    {"name":"Eclipse","url":"eclipse.html"}
+    {"name":"Eclipse","url":"eclipse.html"},
+    {"name":"Slideshow","url":"slideshow.html"}
 ]
