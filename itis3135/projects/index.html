@@ -16,16 +16,71 @@
         <h2>About Me</h2>
         <div>
             
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/zb0y-Cw4Pxo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <div class="carousel-container">
+                <!--slides-->
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <div class="carousel-slide fade">
+                    <figure>
+                        <img src="images/awards.PNG" alt="">
+                        <figcaption>Jack recieving rewards from a 48-hour film challenge.</figcaption>
+                    </figure>
+                </div>
+                <div class="carousel-slide fade">
+                    <figure>
+                        <img src="images/behindthecam.PNG" alt="">
+                        <figcaption>Jack and his peers behind the camera.</figcaption>
+                    </figure>
+                </div>
+                <div class="carousel-slide fade">
+                    <figure>
+                        <img src="images/jackphoto3.jpg" alt="">
+                        <figcaption>Jack in the process of directing.</figcaption>
+                    </figure>
+                </div>
+                <div class="carousel-slide fade">
+                    <figure>
+                        <img src="images/jackchosephot.jpg" alt="">
+                        <figcaption>A particularly cool gnome.</figcaption>
+                    </figure>
+                </div>
+                <div class="carousel-slide fade">
+                    <figure>
+                        <img src="images/jack&freinds.PNG" alt="">
+                        <figcaption>Jack & some friends at a rewards ceremony.</figcaption>
+                    </figure>
+                </div>
+                <div class="carousel-slide fade">
+                    <figure>
+                        <img src="images/jackphoto2.jpg" alt="">
+                        <figcaption>Jack and crew on the set of an upcoming shortfilm.</figcaption>
+                    </figure>
+                </div>
+                <!-- Navigation buttons -->
+                
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+              </div>
+    
+            
         <p>Jack Knight is a student filmmaker located in Wilmington, NC. With a focus in Writing, Directing, and Editing, Jack produces not only solo shorts and sketches, but frequently collaborates with others in his field, acting as a core pillar for the YouTube channel Wolf Shirt Productions. 
 
             Additionally, Jack will adopt the role of Vice President of the Flicker Film Society during the 2024-2025 school year. Flicker is a film club run through the University of North Carolina Wilmington.
              Through Flicker, Jack has participated in producing three separate short films, acting as the Director for Flicker's most recent film, Dead Weight (TBA).</p>
+        </div>
+        <h3>Family Documentary</h3>
+        <div>
+            <p>Filmmaker Jack Knight shares the heartwarming tale of his family and their cherished Beach House in Green Hill, Rhode Island, in "Growing Up Schroeder: A Family Legacy." Through interviews and footage, Jack captures the essence of his grandparents, Dick and Lois Schroeder, who transformed the vacation home into a beloved family sanctuary. 
+                The documentary highlights Lois's vibrant spirit and Dick's quiet strength, showcasing their dynamic personalities through anecdotes and memories. Witness the evolution of a simple house into a beloved home filled with laughter and love, and explore the lasting impact of the Schroeder family through the eyes of current homeowners and family members.
+            </p>
+            
+            <iframe src="https://www.youtube.com/embed/zb0y-Cw4Pxo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
     </footer>
     <script src="scripts/HTMLInclude.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/slideshow.js"></script>
 </body>
 </html>

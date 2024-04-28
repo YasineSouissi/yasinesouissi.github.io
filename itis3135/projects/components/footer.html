@@ -3,3 +3,16 @@
                 <a href="https://www.youtube.com/@wolfshirtproductions/videos" target="_blank"><img src="images/wolfshirt.jpg" alt="wolf shirt"></a>
                 <a href="https://www.youtube.com/@flickerfilm/videos" target="_blank"><img src="images/flicker.jpg" alt="flicker film"></a>
             </nav> 
+            <nav>
+            <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html" target="_blank">HTML Validation
+               </a>
+               <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css" target="_blank">CSS Validation
+                 </a>
+                 <a href="https://wave.webaim.org/report#/" id="validation_link_disability" target="_blank">Webaim Validation
+                 </a>
+            </nav>
+                 <script>
+                    document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+                    document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+                    document.getElementById("validation_link_disability").setAttribute("href","https://wave.webaim.org/report#/" + location.href);
+                </script>

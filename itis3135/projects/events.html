@@ -14,10 +14,35 @@
     </header>
     <main>
         <h2>Events</h2>
+        <div>
+            <img src="images/evildeaddoublefeat.PNG" alt="evildead double feature">
+            <p>This was a double feature that I did with Flicker, Sam Raimi is one of my favorite directors. 
+                That has only been solidified after I rewatched Spiderman 2 in the theatres and experiencing it how it was meant to be experienced.
+                
+            </p>
+        </div>
+        <h3>Have A suggestion on what to watch next?</h3>
+        <p>Fill out this form with your name and suggestion!</p>
+        <form id="myForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+            <label for="image">Attach Image:</label><br>
+            <input type="file" id="image" name="image"><br>
+            <button type="button" onclick="previewForm()">Preview</button>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="preview"></div>
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
     </footer>
+    
+
+    <script src="scripts/prevform.js"></script>
     <script src="scripts/HTMLInclude.js"></script>
 </body>
 </html>
