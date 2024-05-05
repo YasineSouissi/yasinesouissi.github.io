@@ -3,7 +3,10 @@
     p {
       font-size: 18px; /* Further adjust font size for large screens */
     }
-  
+    header img{
+        width: 200px;
+        height: auto;
+    }
     img {
       width: 600px; /* Further adjust image width for large screens */
     }
@@ -13,7 +16,10 @@
     p {
       font-size: 14px; /* Adjust font size for smaller screens */
     }
-  
+    header img{
+        width: 100px;
+        height: auto;
+    }
     img {
       width: 450px; /* Adjust image width for smaller screens */
     }
@@ -24,7 +30,10 @@
     p {
       font-size: 12px; /* Further adjust font size for very small screens */
     }
-  
+    header img{
+        width: 75px;
+        height: auto;
+    }
     img {
       width: 300px; /* Further adjust image width for very small screens */
     }
@@ -84,13 +93,13 @@ footer{
     /* Fallback color */
     background-color: #60656F;
 }
-footer nav a {
+footer nav a, footer a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
 }
 
-footer nav a:hover {
+footer nav a:hover, footer a:hover {
     text-decoration:none;
     color: #92B4A7;
     
