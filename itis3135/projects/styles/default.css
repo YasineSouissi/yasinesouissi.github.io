@@ -38,11 +38,15 @@
 /* Body styles */
 body {
     font-family:'Courier New', Courier, monospace;
-    background-color: #C49991;
+    background-color: #9E2B25;
+    opacity: .9;
+    color: #F6AA1C;
 }
 
 /* Header styles */
 header {
+    background: linear-gradient(180deg,#000000 , #60656F, #000000);
+    /* Fallback color */
     background-color: #60656F;
     color: #fff;
     padding: 20px;
@@ -74,6 +78,11 @@ header nav a:hover {
     text-decoration:none;
     color: #92B4A7;
 
+}
+footer{
+    background: linear-gradient(180deg,#000000 , #60656F, #000000);
+    /* Fallback color */
+    background-color: #60656F;
 }
 footer nav a {
     color: #fff;
