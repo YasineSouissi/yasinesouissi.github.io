@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jack Knight's Portfolio || Inspirations</title>
     <link rel="stylesheet" href="styles/default.css">
+    <link rel="icon" href="images/favicon.drawio.png">
     <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
 </head>
 <body>
@@ -14,39 +15,60 @@
     </header>
     <main>
         <h2>Inspirations</h2>
-        <p> all work and no play makes jack a dull boy. 
-            all work and no play makes jack a dull boy. 
-            all work and no play makes jack a dull boy. 
-            all work and no play makes jack a dull boy. 
-            all work and no play makes jack a dull boy. 
-            all work and no play makes jack a dull boy. 
-            all work and no play makes jack a dull boy. 
-            all work and no play makes jack a dull boy. 
-            all work and no play makes jack a dull boy. 
-            all work and no play makes jack a dull boy. 
-            all work and no play makes jack a dull boy. 
-            all work and no play makes jack a dull boy. 
-            all work and no play makes jack a dull boy. 
-            all work and no play makes jack a dull boy.
-            all work and no play makes jack a dull boy. 
-            all work and no play makes jack a dull boy. 
-            all work and no play makes jack a dull boy. 
-            all work and no play makes jack a dull boy. 
-            all work and no play makes jack a dull boy. 
-            all work and no play makes jack a dull boy. 
-            all work and no play makes jack a dull boy. 
-            all work and no play makes jack a dull boy. 
-            all work and no play makes jack a dull boy. 
-            all work and no play makes jack a dull boy. 
-            all work and no play makes jack a dull boy. 
-            all work and no play makes jack a dull boy. 
-            all work and no play makes jack a dull boy. 
-            all work and no play makes jack a dull boy.
-        </p>
+        <div class="carousel-container">
+            <!--slides-->
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <div class="carousel-slide fade">
+                <figure>
+                    <img src="images/shinining1.jpg" alt="">
+                    <figcaption>The Shining - Stanley Kubrick</figcaption>
+                </figure>
+            </div>
+            <div class="carousel-slide fade">
+                <figure>
+                    <img src="images/shining2.jpg" alt="">
+                    <figcaption>The Shining - Stanley Kubrick</figcaption>
+                </figure>
+            </div>
+            <div class="carousel-slide fade">
+                <figure>
+                    <img src="images/evildead21.png" alt="">
+                    <figcaption>Evil Dead 2 - Sam Raimi</figcaption>
+                </figure>
+            </div>
+            <div class="carousel-slide fade">
+                <figure>
+                    <img src="images/evildead22.jpg" alt="">
+                    <figcaption>Evil Dead 2 - Sam Raimi</figcaption>
+                </figure>
+            </div>
+            <div class="carousel-slide fade">
+                <figure>
+                    <img src="images/muppetmov1.jpg" alt="">
+                    <figcaption>The Muppet Movie - James Frawley</figcaption>
+                </figure>
+            </div>
+            <div class="carousel-slide fade">
+                <figure>
+                    <img src="images/muppetmov2.jpg" alt="">
+                    <figcaption>The Muppet Movie - James Frawley</figcaption>
+                </figure>
+            </div>
+            <!-- Navigation buttons -->
+            
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            <p>
+                This is a slideshow of just a couple of the movies I hold close to my heart that I like to draw inspiration from in my own work.
+                The Shining has been a movie that Ive studied for a long time, Stanley Kubrick as a director has such a distinct style. 
+                It transcends The Shining with Clockwork Orange another one of his works and creates a unforgetable film. 
+                Evil Dead 2 to me feels like one of Sam Raimi's most stylistically unique films, its a movie where becasue of how dissconected it is from the franchise due to legal bouts it allows it to come into its own.
+            </p>
+          </div>
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
     </footer>
     <script src="scripts/HTMLInclude.js"></script>
+    <script src="scripts/slideshow.js"></script>
 </body>
 </html>
